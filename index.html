@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade 8 Chapter 8</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+          <!-- video -->
+          <div class="row d-flex justify-content-center align-items-center position-relative" style="height: 100vh; overflow: hidden;">
+
+            <!-- Background Video -->
+            <video autoplay loop muted playsinline class="position-absolute w-100 h-100" style="object-fit: cover; z-index: 1;">
+              <source src="https://res.cloudinary.com/dn7dkceoz/video/upload/v1744792199/7084650-uhd_2560_1440_25fps_rc9ddz.mp4" type="video/mp4">
+            </video>
+          
+            <!-- Glassmorphic Overlay -->
+            <div class="col-md-10 position-relative text-white d-flex flex-column align-items-center justify-content-center text-center p-4"
+                 style="
+                   background: rgba(0, 0, 0, 0.35);
+                   backdrop-filter: blur(12px);
+                   -webkit-backdrop-filter: blur(12px);
+                   border: 2px solid rgba(255, 255, 255, 0.2);
+                   border-radius: 20px;
+                   z-index: 2;
+                   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+                   font-family: 'Orbitron', sans-serif;
+                   animation: fadeIn 1.5s ease-in-out;
+                   opacity: 1;
+                   transform: translateY(0);
+                   transition: all 0.3s ease;
+                 ">
+          
+              <!-- Futuristic Heading -->
+              <h2 style="
+                  padding: 1rem;
+                  font-size: 2.5rem;
+                  border: 2px solid rgba(255, 255, 255, 0.2);
+                  border-radius: 12px;
+                  box-shadow: 0 0 15px #e3ebec, 0 0 25px #00f0ff40;
+                  transition: all 0.3s ease;
+                "
+                onmouseover="this.style.boxShadow='0 0 30px #00f0ff, 0 0 60px #00f0ff80';"
+                onmouseout="this.style.boxShadow='0 0 15px #00f0ff, 0 0 25px #00f0ff40';"
+              >
+                “Comparision Between Raspbeery Pi and Arduino
+
+
+
+                .”
+              </h2>
+            </div>
+
+            
+          </div>
+
+          <section style="background: linear-gradient(to right, #1c92d2, #f2fcfe); padding: 60px 0; margin-top: 30px;">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-10 bg-white bg-opacity-10 text-white rounded-4 shadow-lg p-5"
+                     style="backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
+                  <h2 class="text-center fw-bold mb-4 display-6">⚙️ Difference Between Raspberry Pi and Arduino</h2>
+                  <p class="fs-5 lh-lg text-center mb-4">
+                    Raspberry Pi and Arduino are both popular in the maker and hobbyist community, but they serve different purposes and have distinct features. Here’s a breakdown of their differences, pros, and cons.
+                  </p>
+          
+                  <h5 class="fw-bold mt-4">🔍 Key Differences:</h5>
+                  <table class="table table-striped table-bordered">
+                    <thead>
+                      <tr>
+                        <th>Feature</th>
+                        <th>Raspberry Pi</th>
+                        <th>Arduino</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Type</td>
+                        <td>Mini Computer</td>
+                        <td>Microcontroller</td>
+                      </tr>
+                      <tr>
+                        <td>Purpose</td>
+                        <td>Software Applications</td>
+                        <td>Hardware Projects</td>
+                      </tr>
+                      <tr>
+                        <td>Power</td>
+                        <td>Needs proper shutdown before disconnecting</td>
+                        <td>Resumes after power interruption</td>
+                      </tr>
+                      <tr>
+                        <td>Operating System</td>
+                        <td>Raspbian (Linux-based), other OS options</td>
+                        <td>No OS, just firmware</td>
+                      </tr>
+                      <tr>
+                        <td>Clock Speed</td>
+                        <td>40x faster than Arduino</td>
+                        <td>Slower</td>
+                      </tr>
+                      <tr>
+                        <td>RAM</td>
+                        <td>Higher (more than 128,000 times than Arduino)</td>
+                        <td>Very limited (only 32KB)</td>
+                      </tr>
+                      <tr>
+                        <td>Storage</td>
+                        <td>Micro SD Card</td>
+                        <td>Onboard 32KB</td>
+                      </tr>
+                      <tr>
+                        <td>Expansion</td>
+                        <td>Has USB ports, HDMI, and GPIO pins for various peripherals</td>
+                        <td>Uses Shields for expansion (WiFi, Ethernet, etc.)</td>
+                      </tr>
+                      <tr>
+                        <td>Development Tools</td>
+                        <td>Scratch, IDLE, or any Linux-supported IDE</td>
+                        <td>Arduino IDE</td>
+                      </tr>
+                    </tbody>
+                  </table>
+          
+                  <h5 class="fw-bold mt-4">💡 Pros and Cons:</h5>
+                  <ul class="fs-5 lh-lg">
+                    <li><strong>Raspberry Pi Pros:</strong> Great for software projects, multimedia, and advanced functionality.</li>
+                    <li><strong>Raspberry Pi Cons:</strong> Requires proper shutdown to avoid damaging the software; more power-hungry.</li>
+                    <li><strong>Arduino Pros:</strong> Ideal for simple, low-power hardware projects, quick prototyping.</li>
+                    <li><strong>Arduino Cons:</strong> Limited processing power and no operating system for advanced software tasks.</li>
+                  </ul>
+          
+                  <p class="text-center fs-5 mt-4">
+                    In summary, choose Raspberry Pi for advanced software applications and computing tasks, and opt for Arduino for simpler, hardware-focused projects. Both are excellent tools, but it all depends on the needs of your project!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          
+          <section style="background: linear-gradient(to right, #6a11cb, #2575fc); padding: 60px 0; margin-top: 30px;">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-10 bg-white bg-opacity-10 text-white rounded-4 shadow-lg p-5"
+                     style="backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2);">
+                  <h2 class="text-center fw-bold mb-4 display-6">🤖 How to Choose Between Raspberry Pi and Arduino</h2>
+                  <p class="fs-5 lh-lg text-center mb-4">
+                    Choosing between Raspberry Pi and Arduino depends on your project requirements. Here's how to decide:
+                  </p>
+          
+                  <ul class="fs-5 lh-lg">
+                    <li><strong>Arduino:</strong> Best for simple, repetitive tasks like controlling lights, motors, or sensors. It's ideal for basic hardware-focused projects where minimal processing power is needed.</li>
+                    <li><strong>Raspberry Pi:</strong> Perfect for more complex projects that require multitasking, internet connectivity, and running a full operating system. Raspberry Pi excels in robotics, IoT applications, and tasks that need more computing power.</li>
+                  </ul>
+          
+                  <h5 class="fw-bold mt-4">💡 Examples:</h5>
+                  <ul class="fs-5 lh-lg">
+                    <li><strong>Arduino Example:</strong> Monitor soil moisture and send an alert if the plants need watering. Arduino handles this with its simplicity and low power consumption.</li>
+                    <li><strong>Raspberry Pi Example:</strong> Monitor soil moisture, send an alert, check the weather, and decide whether to water the plants based on rain predictions. Raspberry Pi handles the complexity and multiple tasks.</li>
+                  </ul>
+          
+                  <p class="text-center fs-5 mt-4">
+                    In short, use Arduino for beginner-level projects that focus on hardware tasks, and go for Raspberry Pi when your project demands more processing power, multitasking, or connectivity.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+</html>
